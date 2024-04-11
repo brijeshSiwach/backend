@@ -237,7 +237,7 @@ const changeCurrentPassword = asyncHandler( async (req, res) => {
         new ApiResponse(200, "", "Password Changed Succesfully")
     )
 })
-
+ 
 const getCurrentUser = asyncHandler( async (req, res) => {
 
     return res
@@ -342,7 +342,7 @@ const updateUserCoverImage = asyncHandler( async (req, res) => {
 const getUserChannelProfile = asyncHandler( async(req, res) => {
     let { userName } = req.params
 
-    userName = userName.replace(":","");
+    // userName = userName.replace(":","");
 
     if (!userName?.trim) {
         throw new ApiError(400, "Username is missing");
