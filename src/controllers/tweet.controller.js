@@ -1,4 +1,4 @@
-import { isValidObjectId, mongoose } from "mongoose";
+import { isValidObjectId } from "mongoose";
 import { asyncHandler } from "../utils/asyncHandler";
 import { ApiError } from "../utils/ApiError";
 import { Tweet } from "../models/tweet.model";
