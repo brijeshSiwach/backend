@@ -6,7 +6,6 @@ const storage = multer.diskStorage({
     },
 
     filename: function (req, file, cb) {
-        //add some random stuff to make file name unique
         cb(null, file.originalname)
     }
 })
